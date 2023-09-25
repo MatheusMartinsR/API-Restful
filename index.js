@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 })
 
 
-mongoose.connect('mongodb+srv://MatheusMartinsR:Qu6GiAJnycWYVQ1z@cluster0.zq8g3mn.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.zq8g3mn.mongodb.net/?retryWrites=true&w=majority')
 .then(() => {
     console.log("Conectado ao banco de dados")
     app.listen(3000)
